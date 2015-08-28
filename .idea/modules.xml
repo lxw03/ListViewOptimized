@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ListViewOptimize.iml" filepath="$PROJECT_DIR$/ListViewOptimize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListViewOptimized.iml" filepath="$PROJECT_DIR$/ListViewOptimized.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
