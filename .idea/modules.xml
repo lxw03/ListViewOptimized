@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ListViewOptimized.iml" filepath="$PROJECT_DIR$/ListViewOptimized.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OptimizedList/OptimizedList.iml" filepath="$PROJECT_DIR$/OptimizedList/OptimizedList.iml" />
     </modules>
   </component>
 </project>

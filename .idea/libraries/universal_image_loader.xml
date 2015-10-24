@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="universal-image-loader">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/universal-image-loader.jar!/" />
+      <root url="jar://$PROJECT_DIR$/OptimizedList/libs/universal-image-loader.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
