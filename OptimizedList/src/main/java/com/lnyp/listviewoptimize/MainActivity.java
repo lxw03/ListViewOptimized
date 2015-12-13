@@ -7,8 +7,9 @@ import android.widget.ListView;
 
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.http.client.HttpRequest;
+import com.lidroid.xutils.util.LogUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
-import com.nostra13.universalimageloader.core.assist.PauseOnScrollListener;
+import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 
 
 public class MainActivity extends Activity implements IOAuthCallBack {
@@ -24,8 +25,7 @@ public class MainActivity extends Activity implements IOAuthCallBack {
         ViewUtils.inject(this);
         qryDataFromServer();
 
-//        //pauseOnScroll控制我们缓慢滑动ListView，GridView是否停止加载图片，pauseOnFling 控制猛的滑动ListView，GridView是否停止加载图片
-//        actualListView.setOnScrollListener(new PauseOnScrollListener(ImageLoaderUtil.getInstance().getImageLoader(), false, true, onScrollListener));
+        // pauseOnScroll控制我们缓慢滑动ListView，GridView是否停止加载图片，pauseOnFling 控制猛的滑动ListView，GridView是否停止加载图片
         listview.setOnScrollListener(new PauseOnScrollListener(ImageLoaderUtil.getInstance().getImageLoader(), false, true, onScrollListener));
     }
 
@@ -58,11 +58,12 @@ public class MainActivity extends Activity implements IOAuthCallBack {
                 case AbsListView.OnScrollListener.SCROLL_STATE_IDLE:
                     // 空闲状态
                     if (view.getLastVisiblePosition() == view.getCount() - 1) {
-                        System.out.println("************滚动到了最后一个***************");
+                        LogUtils.e("************滚动到了最后一个***************");
                     }
                     break;
             }
         }
+
         @Override
         public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
 
