@@ -60,6 +60,7 @@ public class KechengAdapter extends BaseAdapter {
         if (keCheng != null) {
 
             ImageLoaderUtil.getInstance().displayListItemImage(keCheng.picBig, holder.picBig);
+
             holder.name.setText(keCheng.name);
             holder.description.setText(keCheng.description);
 

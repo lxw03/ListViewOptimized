@@ -62,14 +62,14 @@ public class ImageLoaderUtil {
                 .diskCacheExtraOptions(480, 800, null)
                 .denyCacheImageMultipleSizesInMemory()
                 .threadPoolSize(3) // default
-                .threadPriority(Thread.NORM_PRIORITY - 2) // default
-                .tasksProcessingOrder(QueueProcessingType.FIFO) // default
+                .threadPriority(Thread.NORM_PRIORITY - 2)
+                .tasksProcessingOrder(QueueProcessingType.FIFO)
                 .denyCacheImageMultipleSizesInMemory()
                 .memoryCache(new UsingFreqLimitedMemoryCache(10 * 1024 * 1024))
 //                .memoryCacheSize(10 * 1024 * 1024)
                 .diskCacheSize(200 * 1024 * 1024)
-                .diskCache(new UnlimitedDiskCache(cacheDir)) // default
-                .imageDownloader(new BaseImageDownloader(context, 5 * 1000, 30 * 1000)) // connectTimeout (5 s), readTimeout (30 s)超时时间
+                .diskCache(new UnlimitedDiskCache(cacheDir))
+                .imageDownloader(new BaseImageDownloader(context, 5 * 1000, 10 * 1000)) // connectTimeout (5 s), readTimeout (10 s)超时时间
 //                .writeDebugLogs()
                 .build();
 
