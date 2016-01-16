@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/ListViewOptimized.iml" filepath="$PROJECT_DIR$/ListViewOptimized.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OptimizedList/OptimizedList.iml" filepath="$PROJECT_DIR$/OptimizedList/OptimizedList.iml" />
-    </modules>
-  </component>
-</project>
